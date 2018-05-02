@@ -1,6 +1,32 @@
 # node-js
 
-Server-side programming and Node
+Cross-platform, open source server environment that runs JavaScript 
+
+Single thread, non blocking I/O, Asynchronous progamming which makes Node.js a fast server environment for modern web apps requiring high concurrent traffics
+
+Node.js can be used to buid both server side applications (e.g. file systems, database connection) and client side applications (e.g. browser, DOM manipulation)
+
+Apache vs Nginx vs Node.js
+-  Apache (PHP): multi-threaded, blocking I/O, synchronous programming (memory intensive)
+-  Nginx (PHP): single-threaded, event loop, non-blocking I/O, asynchronous programming (memory efficient)
+-  Node.js (JavaScript): single-threaded, event loop, non-blocking I/O, asynchronous programming (memory efficient)
+
+*How PHP or ASP handles*
+
+Client (web browser) <-------> Server (web server) <--------> File system / Database
+1. Client sends a file request to the server's file system
+2. Client waits while the file system opens and reads the file
+3. Server returns the content to the client
+4. Server ready to handle the next reqeust
+                    
+*How Node.js handles*
+Client (web browser) <-------> Server (web server) <--------> File system / Database
+Client (web browser) <-------> Server (web server) <--------> File system / Database
+Client (web browser) <-------> Server (web server) <--------> File system / Database
+...
+1. Client sends a file request to the server's file system
+2. Server ready to handle the next request
+3. When the file system opens and read the file, the server returns the content to the client.
 
 ## Express
 
