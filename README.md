@@ -47,9 +47,13 @@ In order to auto-refresh changes,
     - CouchDB, MongoDB, Nedb
 4. GET request by loadJSON()
 5. POST request by httpPost() for security/hidden data and media/large file upload
-    - `npm install body-parser --save` (POST request sends body including all info, to part it, use body-parser package)
+    - `npm install body-parser --save` (POST request sends body including all info, to parse it, use body-parser package)
 6. CORS (allow other sites to send GET or POST requests)
     - `npm install cors --save`
+7. Sentimental Analysis
+8. Twitter API
+9. Weather API
+10. Firebase 
 
 ## Sentimental Analysis
 
